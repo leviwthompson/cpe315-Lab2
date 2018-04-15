@@ -59,8 +59,6 @@ else:
     mov r5, r0
    /* Set numDiscs parameter to 1 */
     mov r0, #1
-   /* Set start parameter to original start */
-   /* Set goal parameter to original goal */
    /* Call towers function */
     push {r1, r2, r5, r6, r7}
     bl towers
@@ -80,7 +78,6 @@ else:
     pop {r1, r2, r5, r6, r7}
    /* Add result to total steps so far and save it to return register */
     add r0, r5, r0
-    mov r8, r0
 endif:
    /* Restore Registers */
     add sp, sp, #+4
